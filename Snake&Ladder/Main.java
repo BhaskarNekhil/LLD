@@ -33,3 +33,45 @@ public class Main {
         scanner.close();
     }
 }
+
+/*
+ 
+1. Create a new folder
+
+For example:
+
+LLD/
+├── SOLID/
+├── Snake&Ladder/
+├── Parking_Lot/
+└── LibraryManagement/
+2. Add it to Git
+git add LibraryManagement/
+git commit -m "Add Library Management LLD"
+git push origin main
+
+Or simply:
+
+git add .
+git commit -m "Add Library Management LLD"
+git push
+
+
+Ignoring files/folders
+
+Create a file named .gitignore in the root of your repository (D:\LLD).
+
+Example:
+
+Your folder would look like:
+
+LLD/
+│── .git/
+│── .gitignore
+│── SOLID/
+│── Snake&Ladder/
+└── Parking_Lot/
+
+
+ 
+ */
