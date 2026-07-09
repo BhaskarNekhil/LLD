@@ -65,7 +65,7 @@ The system should support multiple pricing strategies, including:
 
 
 
-
+```mermaid
 classDiagram
     %% ===== Enums =====
     class VehicleType {
@@ -258,3 +258,5 @@ classDiagram
         <<utility>>
         +parse(input)$ LocalDateTime
     }
+    
+```
