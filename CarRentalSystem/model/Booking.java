@@ -1,8 +1,10 @@
 package CarRentalSystem.model;
+
 import CarRentalSystem.enums.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
+
 public class Booking {
 
     private String bookingId;
@@ -16,6 +18,9 @@ public class Booking {
     private PaymentStatus paymentStatus = PaymentStatus.PENDING;
     private double amount;
 
+    public Booking() {
+    }
+
     public Booking(String bookingId, User user, Vehicle vehicle,
                    Branch pickupBranch, Branch dropBranch,
                    LocalDateTime startTime, LocalDateTime endTime,
@@ -28,12 +33,8 @@ public class Booking {
         this.dropBranch = dropBranch;
         this.startTime = startTime;
         this.endTime = endTime;
-        if (status != null) {
-            this.status = status;
-        }
-        if (paymentStatus != null) {
-            this.paymentStatus = paymentStatus;
-        }
+        this.status = status;
+        this.paymentStatus = paymentStatus;
         this.amount = amount;
     }
 

@@ -2,10 +2,11 @@ package CarRentalSystem.service;
 import CarRentalSystem.model.Booking;
 import CarRentalSystem.strategy.payment.PaymentStrategy;
 import CarRentalSystem.enums.PaymentStatus;
-public class PaymentService {
+
+public class PaymentProcessor {
     private final PaymentStrategy paymentStrategy;
 
-    public PaymentService(PaymentStrategy paymentStrategy) {
+    public PaymentProcessor(PaymentStrategy paymentStrategy) {
         this.paymentStrategy = paymentStrategy;
     }
 
